@@ -1,0 +1,484 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*header start*/
+header{
+    width: 100%;
+    height: 155px;
+    position: absolute;
+    z-index: 9999;
+
+}
+/*h_top*/
+#h_top{
+    width: 100%; 
+    height: 55px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+.h_top_btn{
+    height: 100%;
+    display: flex;
+}
+.h_top_btn li{
+    padding: 5px 20px;
+}
+.join>a{
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    line-height: 36px;
+}
+.radius_btn{
+    width: 117px; height: 36px;
+    background-color: #9badb6;
+    border-radius: 36px;/*둥근 사각형*/
+    text-align: center;/*글자를 좌우 가운데 정렬(가로)*/
+    line-height: 36px; /*글자를 위아래 가운데 정렬(세로)*/
+}
+.wedding{
+    background-color: #f78192;;
+}
+.radius_btn>a{
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+.wedding>a{
+    display: block;
+    padding-left: 34px;
+    background-image: url(../img/wedding-icon.png);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    /*이미지를 배경으로 넣는 방법*/
+    /* background-repeat: no-repeat; 배경이미지를 반복하지 않음*/
+    /* background-position: 가로 세로;*/
+}
+
+/*h_bot*/
+#h_bot{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+.h_left{
+    width: 40%;
+    height: 100%;
+}
+.h_left>ul{
+    display: flex;
+}
+.h_logo{
+    width: 182px;
+    height: 100%;
+}
+.h_right{
+    width: 40%; height: 100%;
+}
+.h_right>ul{
+    display: flex;
+    justify-content: flex-end;
+}
+#h_bot>div>ul>li{
+    padding: 10px;
+    padding-top: 20px;
+}
+#h_bot>div>ul>li>a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    line-height: 36px;
+}
+#h_bot>div>ul>.search{
+    width: 17px; height: 18px;
+    margin-top: 28px;
+    margin-left: 10px;
+    text-indent: -9999px; /*글자를 -9999px 만큼 보냄*/
+    background-image: url(../img/gnb-search-btn.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#h_bot>div>ul>.nav{
+    width: 26px; height: 18px;
+    margin-top: 28px;
+    padding-right: 0px;
+    text-indent: -9999px;
+    background-image: url(../img/ham.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+/*nav 반응형*/
+ul.sub{
+    overflow: hidden;
+}
+ul.sub>li{
+    margin: 10px 0;
+}
+#h_bot ul.sub>li>a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #666;
+    letter-spacing: -0.025em;
+    line-height: 25px;
+}
+ul.sub_r{
+    overflow: hidden;
+}
+ul.sub_r>li{
+    margin: 10px 0;
+}
+#h_bot ul.sub_r>li>a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #666;
+    letter-spacing: -0.025em;
+    line-height: 25px;
+}
+/*검색 반응형*/
+#search_wrap{
+    width: 100%; height: 100px;
+    background-color: #fff;
+}
+.search_txt{
+    width: 650px;
+    margin: auto;
+    border-bottom: 3px solid #000 ;
+}
+.search_txt>input{
+    width: calc(100% - 50px);
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    line-height: 60px;
+    color: #333;
+    font-weight: 300;
+
+}
+.search_txt>span{
+    display: block;
+    float: right;
+    width: 30px; height: 60px;
+    background-image: url(../img/gnb-search-btn-27x28.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.search_close{
+    position: relative;
+    width: 100%; height: 800px;
+    margin: auto;
+    bottom: -100px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+}
+.search_close>span{
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+}
+
+/* ham full page */
+.sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 9991;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+    display: flex;
+    width: 0;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #000;
+}
+.visual_menu{
+    position: relative;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    padding: 70px 80px;
+}
+.visual_menu .language{
+    position: relative;
+    margin-bottom: 80px;
+    overflow: hidden;
+    z-index: 1;
+}
+.visual_menu .language>a{
+    position: relative;
+    display: inline-block;
+    padding: 0 16px 0 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 45px;
+}
+.visual_menu .language>a:nth-child(2){
+    padding: 0 0 0 10px;
+}
+.visual_menu .language .KOR:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 9px;
+    background: #fff;
+    opacity: 0.2;
+}
+.visual_menu .menu{
+    width: 100%;
+}
+.visual_menu .menu:hover .img{
+    opacity: 1;
+}
+.visual_menu .menu .img_1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    overflow: hidden;
+}
+.visual_menu .menu .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    overflow: hidden;
+}
+
+.visual_menu .menu .img_1 img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.07);
+    transition: transform 1s ease-out;
+}
+.visual_menu .menu .img img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.07);
+    transition: transform 1s ease-out;
+}
+
+.visual_menu .menu .menu_text{
+    position: relative;
+    display: flex;
+    align-content: start;
+    align-items: start;
+    z-index: 1;
+}
+.visual_menu .menu .menu_text>.one_d{
+    width: 300px;
+    margin-bottom: 30px;
+}
+.visual_menu .menu .menu_text>.one_d>a{
+    display: inline-block;
+    width: auto;
+    font-size: 34px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    opacity: 0.4;
+}
+.visual_menu .menu .menu_text>.one_d>a:hover {
+    opacity: 1;
+    transition: all 0.2s;
+}
+/* 햄버거 오른쪽 */
+.all_menu{
+    width: calc(100% - 30%);
+    /* height: 100%; */
+    padding: 100px 80px 200px 100px;
+    background: #fff;
+}
+.menu_list_div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu_list_div>.menu{
+    position: relative;
+    top: 50px;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    width: calc(100% / 5);
+    max-width: 205px;
+    padding-right: 50px;
+    margin-bottom: 57px;
+}
+.menu_list_div>.menu>.one_d{
+    margin-bottom: 22px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1;
+}
+.menu_list_div>.menu>.two_d>a{
+    display: block;
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    line-height: 24px;
+}
+
+main{
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/*footer start*/
+footer{
+    width: 100%;
+    padding: 60px 80px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+}
+.f_nav>ul{
+    display: flex;
+}
+.f_nav>ul>li{
+    padding-right: 45px;
+}
+.f_nav>ul>li>a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    line-height: 36px;
+}
+.f_nav>ul>li>.priv{
+    color: #0890c0;
+    font-weight: bold;
+}
+.address{
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+}
+
+/*하단 탑버튼*/
+
+#top_wrap{
+    position: fixed;
+    right: 0; bottom: 0;
+    z-index: 9999;
+    cursor: pointer;
+}
+.top1{
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px;
+}
+.top_btn{
+    width: 80px;
+    height: 80px;
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
+}
+.top_btn:hover{
+    background-color: #0890c0;
+    color: #fff;
+}
+
+/*셀렉트 박스*/
+
+.footer1 .links {
+    margin-top: 6px;
+    float: right;
+    font-size: 14px;
+    position: relative;
+}
+
+.footer1 .links button {
+    cursor: pointer;
+    position: relative;
+    width: 250px;
+    text-align: left;
+    display: block;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333333;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    background: url(../img/select-icon2-on.png) no-repeat right center;
+    border: none;
+    border-bottom: 2px solid #000;
+}
+
+.footer1 .links ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    border: none;
+    list-style: none;
+    z-index: 1;
+}
+
+.footer1 .links:hover ul {
+    display: block;
+}
+.footer1 .links ul>li:first-child {
+    border-top: 0;
+}
+.footer1 .links ul>li>a {
+    background: #000;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 15px;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+}
+.footer1 .links ul>li>.last_sel{
+    background-image: url(../img/select-icon2-wht-on.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+

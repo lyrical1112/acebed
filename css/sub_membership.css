@@ -1,0 +1,426 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+main {
+    width: 100%;
+    padding-top: 155px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #333;
+    line-height: 280px;
+}
+
+.member_wrap {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 80px 0 160px;
+}
+
+.sns_wrap {
+    width: 1440px;
+    margin: auto;
+    background-color: #f7f7f7;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.sns_wrap>h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 32px;
+    padding-bottom: 24px;
+}
+
+.join_sns>a {
+    display: inline-block;
+    padding: 20px 50px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    color: #888888;
+    margin-right: 5px;
+}
+
+.join_sns>a:hover {
+    border: 1px solid #333;
+}
+
+.join_sns>a>span {
+    display: block;
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+    width: 18px;
+    height: 17px;
+}
+
+.kakao {
+    background: url(../img/sns-btn-icon-kakao.jpg) no-repeat;
+}
+
+.naver {
+    background: url(../img/sns-btn-icon-naver.jpg) no-repeat;
+}
+
+/*약관동의*/
+.txt_wrap {
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    text-align: left;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.txt_wrap>h4 {
+    width: 486px;
+    font-size: 50px;
+    font-weight: 300;
+    color: #333333;
+}
+
+.join_txt {
+    width: calc(100% - 486px);
+}
+
+.terms {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.txt_title>h5,
+dt {
+    width: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    padding: 15px 0;
+}
+
+.customer {
+    width: calc(100% - 150px);
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+    line-height: 20px;
+}
+
+.customer li {
+    padding: 15px 0;
+}
+
+.customer strong {
+    float: right;
+    padding: 0 22px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+    background: url(../img/select-icon2.png) no-repeat right;
+}
+
+/*회원가입 칸*/
+input {
+    cursor: pointer;
+}
+
+dl {
+    display: flex;
+}
+
+dd {
+    padding: 15px 0;
+}
+
+dd>p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #0890c0;
+    line-height: 18px;
+}
+
+dl>dd>p>span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/exc-icon.png) no-repeat;
+}
+
+dd>input[type=text],
+input[type=password] {
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid #dddddd;
+    width: 364px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333333;
+    line-height: 1.2;
+}
+
+input[type=password] {
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+
+input[type=submit] {
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid #333;
+    width: 225px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    line-height: 60px;
+    text-align: center;
+}
+
+.agree input[type=button] {
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid #888;
+    width: 156px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #888;
+    line-height: 60px;
+    text-align: center;
+}
+
+.join_btn_b {
+    height: 50px;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    color: #333333;
+    border: 1px solid #666666;
+}
+
+.dedicated {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s linear;
+}
+
+.dedicated::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #0890c0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    top: 100%;
+    right: 0;
+    bottom: 100%;
+    opacity: 0;
+    transition: top 0.4s ease, opacity 0.4s ease;
+}
+
+.dedicated:hover .join_btn_b {
+    color: #fff;
+}
+
+.dedicated:hover:after {
+    top: 0;
+    opacity: 1;
+    width: 100%;
+    transform: scaleY(2.1);
+}
+
+/* --- */
+.dedicated2 {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s linear;
+}
+
+.dedicated2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #0890c0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    top: 100%;
+    right: 0;
+    bottom: 100%;
+    opacity: 0;
+    transition: top 0.4s ease, opacity 0.4s ease;
+}
+
+.dedicated2:hover input {
+    color: #fff;
+}
+
+.dedicated2:hover:after {
+    top: -3px;
+    opacity: 1;
+    width: 100%;
+    transform: scaleY(2.4);
+}
+
+/* ---- */
+.dedicated3 {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s linear;
+}
+
+.dedicated3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #888;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    top: 100%;
+    right: 0;
+    bottom: 100%;
+    opacity: 0;
+    transition: top 0.4s ease, opacity 0.4s ease;
+}
+
+.dedicated3:hover input {
+    color: #fff;
+}
+
+.dedicated3:hover:after {
+    top: -3px;
+    opacity: 1;
+    width: 100%;
+    transform: scaleY(2.4);
+}
+
+/*  */
+.dedicated4 {
+    display: inline-block;
+    outline: none;
+    background: none;
+    border: 1px solid #333;
+    width: 225px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s linear;
+}
+
+.dedicated4:hover {
+    color: #fff;
+}
+
+.dedicated4::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #0890c0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    top: 100%;
+    right: 0;
+    bottom: 100%;
+    opacity: 0;
+    transition: top 0.4s ease, opacity 0.4s ease;
+}
+
+.dedicated4:hover:after {
+    top: 0;
+    opacity: 1;
+    width: 100%;
+}
+
+/*  */
+.dedicated5 {
+    display: inline-block;
+    outline: none;
+    background: none;
+    border: 1px solid #333;
+    width: 225px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s linear;
+}
+
+.dedicated5:hover {
+    color: #fff;
+}
+
+.dedicated5::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #888;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    top: 100%;
+    right: 0;
+    bottom: 100%;
+    opacity: 0;
+    transition: top 0.4s ease, opacity 0.4s ease;
+}
+
+.dedicated5:hover:after {
+    top: 0;
+    opacity: 1;
+    width: 100%;
+}
+
+dt>span {
+    display: inline-block;
+    width: 9px;
+    height: 15px;
+    background: url(../img/essen-tit-icon.png) no-repeat;
+}
+
+.agree {
+    padding: 50px 0;
+}

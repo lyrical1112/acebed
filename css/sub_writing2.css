@@ -1,0 +1,144 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+main {
+    width: 100%;
+    padding-top: 55px;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #333;
+    line-height: 280px;
+    text-align: center;
+}
+
+.writing_wrap {
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    padding: 80px 0 160px;
+}
+
+.view_div {
+    border-top: 1px solid #ebebeb;
+}
+
+.inner {
+    width: 1000px;
+    margin: auto;
+}
+
+.view_top {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 74px 0 60px;
+}
+
+.title_view {
+    width: calc(100% - 135px);
+    font-size: 36px;
+    font-weight: 300;
+    color: #333;
+    line-height: 42px;
+    letter-spacing: -0.07em;
+}
+
+.title_view>p {
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #aaa;
+    line-height: 1;
+    letter-spacing: 1.5px;
+}
+
+.sns_view {
+    position: relative;
+    width: 135px;
+    text-align: right;
+    margin: 0 0 auto;
+}
+
+.sns_view>a {
+    display: inline-block;
+    width: 27px;
+    height: 25px;
+    text-align: left;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(../img/user-menu-share2.png) center no-repeat;
+}
+
+table {
+    margin: auto;
+}
+
+table th,
+td {
+    border: none;
+}
+
+td label {
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+}
+
+td input {
+    font-size: 20px;
+    color: #333;
+}
+
+.view_submit {
+    text-align: center;
+}
+.view_submit input {
+    color: #333;
+    border: 1px solid #999;
+    background-color: #fff;
+    padding: 17px 37px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: pointer;
+}
+
+.view_submit input:hover {
+    color: #fff;
+    background-color: #0890c0;
+    transition: width 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+/* 노티스 체크 */
+.N_list{
+    padding-top: 20px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #ebebeb;
+    width: 200px;
+    height: 50px;
+}
+.N_list:hover{
+    background-color: #0890c0;
+    transition: width 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.N_list:hover a{
+    color:#fff;
+    transition: width 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.N_list>a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
