@@ -1,5 +1,5 @@
 # acebed
-<a href="https://ibb.co/ZBC7V8B"><img src="https://i.ibb.co/Wk1j6yk/acebed.png" alt="acebed" border="0"></a>
+<a href="https://ibb.co/TLgY8BT"><img src="https://i.ibb.co/GT5n2vJ/ace2-1.png" alt="ace2-1" border="0"></a>
 
 에이스베드 웹사이트 클론코딩 입니다.
 
